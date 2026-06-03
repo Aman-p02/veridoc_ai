@@ -166,7 +166,7 @@ async def upload_pdf_dialog():
     files = None
     while files is None:
         files = await cl.AskFileMessage(
-            content="Please upload a financial document (PDF) to start.",
+            content="Please upload any document (PDF) to analyze.",
             accept=["application/pdf"],
             max_size_mb=30,
             timeout=300
@@ -241,7 +241,7 @@ async def start():
     # Welcome banner using beautiful Markdown structure
     welcome_markdown = (
         "# 🕵️‍♂️ VeriDoc AI\n"
-        "### *Self-Correcting Multi-Agent Financial Document Analyst*\n\n"
+        "### *Self-Correcting Multi-Agent Document Analyst*\n\n"
         "Experience a production-grade multi-agent agentic workflow. "
         "A **Researcher** extracts context, a **Critic** audits for hallucinations "
         "and completeness, and a **Writer** drafts a structured, cited executive report."
