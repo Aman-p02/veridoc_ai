@@ -1,0 +1,35 @@
+2 
+Q.4 (a) Define the compare  To method in a class implementing the Comparable 
+interface. What are the benefits of implementing the Comparable interface? 
+03 
+ (b) What do you understand by thread? Describe the complete life cycle of thread. 04 
+ (c) Describe and compare Hash Map, Linked Hash Map, and Tree Map. 07 
+  OR  
+Q.4 (a) What is a recursive method? Write a recursive mathematical definition for 
+computing 2n for a positive integer n. 
+03 
+ (b) What do you mean by thread synchronization? How can you synchronize java 
+threads? 
+04 
+ (c) Write a program to add ten elements in a list and traverse a list in both 
+directions. 
+ 
+07 
+    
+Q.5 (a) What are the benefits of using generic types? How do you declare a generic 
+type in a class? 
+03 
+ (b) Which method do you use to obtain an element in the collection from an 
+iterator? Explain with example. 
+04 
+ (c) Which layout panes are supported by JavaFX? Write a program to create a 
+login screen using Grid Pane. 
+07 
+  OR  
+Q.5 (a) How do you declare and invoke a generic method? 03 
+ (b) How do create and use anonymous inner class? 04 
+ (c) Write a program to define and register handlers for key pressed, key released, 
+and key typed events using JavaFX.  
+07 
+ 
+*************

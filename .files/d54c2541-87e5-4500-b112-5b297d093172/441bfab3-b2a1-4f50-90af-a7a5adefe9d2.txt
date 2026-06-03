@@ -1,0 +1,17 @@
+OR  
+Q.4 (a) Explain difference between throw and throws. 03 
+ (b) Write programs to deal with MouseEvents. 04 
+ (c) Explain Generics methods with example. 07 
+ 
+Q.5 (a) Demonstrate use of the Animation, PathTransition. 03 
+ (b) Describe the life cycle of a thread object. 04 
+ (c) Explain use of Linked List collection class with example. 07 
+  OR  
+Q.5 (a) Create a radio button using the RadioButton class and group 
+radio buttons using a ToggleGroup. 
+03 
+ (b) Explain runnable interface. 04 
+ (c) Explain Sets  with examples. 07 
+ 
+ 
+***********

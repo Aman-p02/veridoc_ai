@@ -1,0 +1,18 @@
+(b) Explain the use of File class to handle I/O. 04 
+ (c) Write the bin2Dec(String binary String) method to convert a binary string into 
+a decimal number. Implement the bin2Dec method to throw a Number Format 
+Exception if the string is not a binary string. 
+07 
+  OR  
+Q.3 (a) How do you prevent a class from being  extended? How do you prevent a 
+method from being overridden? 
+03 
+ (b) Differentiate the followings: 
+(i) Checked and Unchecked Exceptions 
+(ii) Text I/O and Binary I/O 
+04 
+ (c) Write a program that lets users copy files. The user needs to provide a source 
+file and a  target file as command -line arguments using the command: java 
+Copy source target 
+ 
+07

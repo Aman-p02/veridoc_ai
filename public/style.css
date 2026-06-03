@@ -1,0 +1,174 @@
+/* ==============================================================================
+   VeriDoc AI: Self-Correcting Financial Document Analyst Custom Theme (CSS)
+   ============================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg-primary: #0b0f19;
+  --bg-secondary: rgba(17, 24, 39, 0.7);
+  --glass-bg: rgba(26, 32, 44, 0.45);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --accent-primary: #3b82f6;      /* Researcher Blue */
+  --accent-success: #10b981;      /* Critic Approved Green */
+  --accent-warning: #f59e0b;      /* Critic Feedback Orange */
+  --accent-creative: #8b5cf6;     /* Writer Purple */
+  --text-primary: #f3f4f6;
+  --text-secondary: #9ca3af;
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Outfit', sans-serif;
+}
+
+/* Global Adjustments */
+body, html {
+  font-family: var(--font-body) !important;
+  background: radial-gradient(circle at top right, #1e1b4b 0%, #0b0f19 50%, #030712 100%) !important;
+  color: var(--text-primary) !important;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Typography Overrides */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display) !important;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+/* Header & Navigation Styling */
+header {
+  background: rgba(11, 15, 25, 0.8) !important;
+  backdrop-filter: blur(12px) !important;
+  border-bottom: 1px solid var(--glass-border) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Make Chainlit Chat Window feel Glassmorphic */
+.cl-message {
+  border-radius: 12px !important;
+  border: 1px solid var(--glass-border) !important;
+  background-color: var(--glass-bg) !important;
+  backdrop-filter: blur(8px) !important;
+  margin-bottom: 1rem !important;
+  padding: 1.25rem !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+}
+
+.cl-message:hover {
+  border-color: rgba(255, 255, 255, 0.15) !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.1) !important;
+  transform: translateY(-2px);
+}
+
+/* Styling Steps / Real-time Agent Traces */
+.cl-step {
+  border-left: 3px solid var(--accent-primary) !important;
+  background: rgba(59, 130, 246, 0.03) !important;
+  margin-left: 0.5rem !important;
+  border-radius: 0 8px 8px 0 !important;
+}
+
+/* Specialize borders based on emojis in the step header if possible */
+.cl-step[data-name*="Critic"] {
+  border-left: 3px solid var(--accent-warning) !important;
+  background: rgba(245, 158, 11, 0.03) !important;
+}
+
+.cl-step[data-name*="Writer"] {
+  border-left: 3px solid var(--accent-creative) !important;
+  background: rgba(139, 92, 246, 0.03) !important;
+}
+
+/* Input Form Styling */
+#chat-input {
+  background: rgba(17, 24, 39, 0.9) !important;
+  border: 1px solid var(--glass-border) !important;
+  border-radius: 24px !important;
+  color: var(--text-primary) !important;
+  padding: 0.75rem 1.5rem !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5) !important;
+  backdrop-filter: blur(10px) !important;
+  transition: all 0.2s ease !important;
+}
+
+#chat-input:focus {
+  border-color: var(--accent-primary) !important;
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.4) !important;
+}
+
+/* Button Styling */
+button {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* Accent Badges or Highlights */
+code {
+  background-color: rgba(255, 255, 255, 0.07) !important;
+  color: #60a5fa !important;
+  border-radius: 4px !important;
+  padding: 0.2rem 0.4rem !important;
+  font-family: 'Space Grotesk', monospace !important;
+  font-size: 0.875rem !important;
+}
+
+/* Custom premium landing welcome banner */
+.welcome-banner {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+.welcome-title {
+  font-size: 2.5rem;
+  background: linear-gradient(90deg, #60a5fa, #c084fc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.5rem;
+}
+
+.welcome-subtitle {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+/* Citations display style */
+.citation-tag {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(59, 130, 246, 0.15);
+  color: #93c5fd;
+  border: 1px solid rgba(96, 165, 250, 0.3);
+  border-radius: 12px;
+  padding: 0.1rem 0.6rem;
+  font-size: 0.75rem;
+  margin-right: 0.5rem;
+  margin-top: 0.25rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.citation-tag:hover {
+  background: rgba(59, 130, 246, 0.3);
+  transform: scale(1.05);
+}
