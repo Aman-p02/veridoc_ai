@@ -1,0 +1,60 @@
+Cumulative Attendance Report
+Subject: Python
+Faculty: Dr. Aman Jat
+Period / Filter: Last 1 Week
+Student Performance Summary
+S.No
+Enrollment No
+Student Name
+Total
+Lectures
+Lectures
+Attended
+Attend
+ance
+%
+1
+CS2026001
+Alice Vance
+1
+0
+0.0%
+2
+250163107021
+Aman Prajapati
+1
+0
+0.0%
+3
+CS2026002
+Bob Miller
+1
+0
+0.0%
+4
+CS2026010
+Bruce Wayne
+1
+0
+0.0%
+5
+CS2026866696
+Bruce Wayne
+1
+0
+0.0%
+6
+CS2026003
+Charlie Brown
+1
+0
+0.0%
+7
+CS2026004
+Diana Prince
+1
+0
+0.0%
+Anti-Proxy Attendance System - Official Report
+Page 1 of 1
+Generated on: 2026-05-20 18:07:07
